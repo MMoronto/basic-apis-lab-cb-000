@@ -9,7 +9,7 @@
 <ul>
   <% @results.each do |result| %>
     <li><%= result["name"] %><br>
-        <%= link_to result["http://localhost:3000"], result["http://localhost:3000"] %><br>
+        <%= link_to result["html_url"], result["html_url"] %><br>
         <%= result["description"] %>
     </li>
   <% end %>
